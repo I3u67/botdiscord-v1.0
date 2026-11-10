@@ -45,7 +45,7 @@ bot = Klient()
 #comandos principais
 @bot.tree.command(name="saudacao", description="Fale com o sonic")
 async def saudacao(interaction:discord.Interaction):
-    await interaction.response.send_message(f"Olá {interaction.user.mention}!", ephemeral=(True)) #ephemeral ativado quer dizer que somente o usuario que usou o commando pode ver o res do comando
+    await interaction.response.send_message(f"Olá {interaction.user.mention}!", ephemeral=(True)) #ephemeral ativado quer dizer que somente o usuario que usou o commando pode ver o resto do comando
 
 @bot.tree.command(name="amor", description="mensagem secreta")
 async def amor(interaction:discord.Interaction):
