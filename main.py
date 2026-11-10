@@ -47,9 +47,9 @@ bot = Klient()
 async def saudacao(interaction:discord.Interaction):
     await interaction.response.send_message(f"Olá {interaction.user.mention}!", ephemeral=(True)) #ephemeral ativado quer dizer que somente o usuario que usou o commando pode ver o res do comando
 
-@bot.tree.command(name="felipe", description="mensagem secreta")
-async def felipe(interaction:discord.Interaction):
-    await interaction.response.send_message("beijos, te amo! <3", ephemeral=(True))
+@bot.tree.command(name="amor", description="mensagem secreta")
+async def amor(interaction:discord.Interaction):
+    await interaction.response.send_message("te amo! <3", ephemeral=(True))
 
 bot.run(DISCORD_TOKEN) #token do bot
 
