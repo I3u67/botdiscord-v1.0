@@ -16,6 +16,6 @@ caminho = os.path.join(root,file).replace("\\","/").replace("/",".")[:-3]
 
 await self.load_extension(caminho)
 
-print(f"cog carregado {caminho})"
+print(f"cog carregado {caminho}")
                     
 Para que eu não precise ficar colocando cada caminho novo toda hora que eu criasse uma pasta ou subpasta nova, então agora com esse looping, o sistema passará a sempre ver todos os diretorios e arquivos do root selecionado a qual chamei de "cogs", que é o nome da pasta. Vi na internet que o comando ficaria mais completo com essa adição de "caminho", a qual entendi que também poderia colocar o replace para evitar problemas na forma de escrita de direcionamento, substituindo-os pelo que o sistema identifica, que é o "."
